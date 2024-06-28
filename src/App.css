@@ -1,0 +1,15 @@
+/* Define default styles */
+.testimonial-nav-wrapper > div > svg {
+    fill: #FFBB50; /* Default fill color */
+    transition: fill 0.3s ease; /* Smooth transition effect */
+}
+
+/* Change icon fill color when parent is hovered */
+.testimonial-nav-wrapper:hover > div > svg {
+    fill: #FFFFFF; /* Change fill color when parent is hovered */
+}
+
+
+ 
+  
+  

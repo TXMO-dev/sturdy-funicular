@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media only screen and (max-width: 767px) {
+    /* Your CSS rules for mobile phones here */
+    .hidenav {
+        display:none;
+    }
+    .smallnav {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Your CSS rules for tablets here */
+    .hidenav {
+        display:flex;
+    }
+    .smallnav {
+        display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    /* Your CSS rules for laptops and above here */
+    .hidenav {
+        display:flex;
+    }
+    .smallnav {
+        display: none;
+    }
+  }
+
+  .transitionparent:hover {
+    background-color: #FFBB50; /* Change background color of transitionparent on hover */
+}
+
+/* Change color of transitionchild when transitionparent is hovered */
+.transitionparent:hover .transitionchild {
+    color: #FFFFFF; /* Change color of transitionchild on hover of transitionparent */
+}
